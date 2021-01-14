@@ -17,45 +17,32 @@
 <body>
 
     <div class="container">
-        <h2>Collections</h2>
-        <ul class="collection z-depth-4 with-header">
-            <li class="collection-header">
-                <h5>Header</h4>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue ">person</i>
-                <span class="title">
-                    List 1
-                </span>
-                <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cumque numquam vel
-                </p>
-                <a href="" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
+        <h4>Modals</h4>
+        <a class="btn orange modal-trigger" href="#terms">Terms & Condition</a>
 
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue ">person</i>
-                <span class="title">
-                    List 2
-                </span>
-                <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cumque numquam
-                    vel
-                </p>
-                <a href="" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item">List 3</li>
-            <li class="collection-item">List 4</li>
-            <li class="collection-item">List 5</li>
-            <li class="collection-item">List 6</li>
-        </ul>
+
+        <div id="terms" class="modal">
+            <div class="modal-content">
+                <h4>Terms & Conditions</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptate, debitis accusantium
+                    error illo soluta veritatis quasi nihil officiis omnis eveniet iure atque. Voluptatem adipisci
+                    voluptate itaque, veniam praesentium beatae!</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn orange">I Agree</a>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".modal").modal();
+        });
+    </script>
 </body>
 
 </html>
